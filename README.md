@@ -34,6 +34,9 @@ You configure the box via a serial connection. Plug the box into a computer and 
 * setdrinksresetcard
 
 Enter each command in turn and press the Send button. If the leds are not working, unplug the device and plug it back in again to update the pixel control pin setting. When you enter the final command the leds should change to white. Scan the card you are going to use as the reset card and the leds will change to blue. This card can then be used to reset the drinks cards. 
+## Case
+![Case and lid](images/case.png)
+STL files for the case are in the case folder.
 ## Led Power Supply issues
 The circuit above connects the power for the pixel ring to the VSYS pin on the PICO. This pin is connected to the USB 5V power input. This is the best way of providing power to a pixel, as long as it works. It might not work because some neopixels require a higher signal voltage than the 3.3v provided by a Pico. If this is the case for you, connect the neopixel power input to the 3.3 volt output from the PICO. This will make the pixels slightly dimmer, but they will work. 
 ## RFID driver issues
@@ -42,3 +45,5 @@ The software uses the RFID driver code from [Miguel Balboa](https://github.com/m
 This project uses [HullOS-X](https://github.com/connected-little-boxes/HULLOS-X), which is the latest version of the box control software. 
 
 Have fun
+
+[Rob Miles](https://www.robmiles.com)
